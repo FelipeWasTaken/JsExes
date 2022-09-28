@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>004</title>
+
+    <style>
+        body {
+            background-color: rgb(17, 17, 17);
+            color: wheat;
+            font: normal 15pt Helvetica;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = prompt('Qual é seu nome? ')
+        document.writeln(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!`)
+        document.writeln(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong>`)
+
+        //n = 5.4 n.toFixed(2) = 5.40 ~ muda as casas decimais do numero
+        //n.replace('.', ',') ~ muda uma coisa, para outra (nesse caso 5.4 vira 5,4)
+        //n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL' }) ~ transforma o numero em formato Real Brasileiro
+        
+    </script>
+</body>
+</html>
