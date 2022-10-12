@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é Brasileiro?</title>
+</head>
+<body>
+    <h1>Você é Brasileiro?</h1>
+    <p>Confirme sua nacionalidade em alguns segundos</p>
+    Você nasceu no Brasil? (Responda com "Sim" ou "Não") <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var nacionalidade = document.getElementById('nac')
+            var resposta = document.getElementById('resposta')
+ //problema aqui
+            if (nacionalidade != 'Sim') {
+                resposta.innerHTML = `<p>Você é Brasileiro!!!</p>`
+            }
+            if (nacionalidade == 'Não') {
+                resposta.innerHTML = `<p>Você não é Brasileiro, mas acho que você já sabia disso</p>`
+            }
+        }
+    </script>
+</body>
+</html>
